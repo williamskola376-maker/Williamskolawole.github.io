@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Educational Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">EduLearn</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subjects.html">Subject</a></li>
+                <li><a href="quiz-room.html">Quiz Room</a></li>
+                <li><a href="leaderboard.html">Leader Board</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Feedback Section -->
+    <section class="form-section">
+        <div class="container">
+            <h1>Send Us Your Feedback</h1>
+            <p class="subtitle">We'd love to hear from you!</p>
+            
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
+

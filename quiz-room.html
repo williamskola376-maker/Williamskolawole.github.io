@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Room - Educational Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">EduLearn</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subjects.html">Subject</a></li>
+                <li><a href="quiz-room.html" class="active">Quiz Room</a></li>
+                <li><a href="leaderboard.html">Leader Board</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <div class="container">
+            <h1>Quiz Room</h1>
+            <p class="subtitle">Test your knowledge across different phases</p>
+            
+            <!-- Phase Selector -->
+            <div class="phase-selector" id="phaseSelector">
+                <!-- Phases will be dynamically generated -->
+            </div>
+
+            <!-- Quiz Container -->
+            <div class="quiz-container" id="quizContainer">
+                <p>Select a phase to begin the quiz</p>
+            </div>
+
+            <!-- Score Display -->
+            <div id="scoreDisplay" style="text-align: center; margin-top: 2rem; display: none;">
+                <h2>Your Score: <span id="scoreValue">0</span></h2>
+                <button class="btn-primary" onclick="saveScore()">Save Score to Leaderboard</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="quiz-room.js"></script>
+</body>
+</html>
+
